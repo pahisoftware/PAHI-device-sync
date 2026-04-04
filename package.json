@@ -1,0 +1,25 @@
+{
+  "name": "pahi-device-sync",
+  "version": "1.0.0",
+  "description": "Device -> Mqtt -> *PAHI-device-sync* -> Mongo DB",
+  "homepage": "https://github.com/pahisoftware/PAHI-device-sync#readme",
+  "bugs": {
+    "url": "https://github.com/pahisoftware/PAHI-device-sync/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pahisoftware/PAHI-device-sync.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "dotenv": "^17.4.0",
+    "mongodb": "^7.1.1",
+    "mqtt": "^5.15.1"
+  }
+}
