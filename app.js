@@ -73,11 +73,10 @@ function connectMQTT() {
         timestamp,
 
         gps: payload.gps || null,
+        network:payload.network || null,
         battery: payload.battery || null,
         storage: payload.storage || null,
-
         msg_type: payload.msg_type || null,
-
         last_updated: new Date(),
         status: "online"
       };
@@ -88,7 +87,7 @@ function connectMQTT() {
         { upsert: true }
       );
 
-      console.log(`✅ Stored data for ${device_id}`);
+      console.log(`Stored data for ${device_id}`);
     } catch (err) {
       console.error("Error:", err.message);
     }
